@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECAE7932-7795-4D9C-AC8F-1FA1F379E79E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CienciasYTecnologia.My.MyApplication</StartupObject>
+    <RootNamespace>CienciasYTecnologia</RootNamespace>
+    <AssemblyName>CienciasYTecnologia</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CienciasYTecnologia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CienciasYTecnologia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="FisicaGame2.Designer.vb">
+      <DependentUpon>FisicaGame2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FisicaGame2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FisicaGame3.Designer.vb">
+      <DependentUpon>FisicaGame3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FisicaGame3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuimicaGame3.Designer.vb">
+      <DependentUpon>QuimicaGame3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuimicaGame3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuimicaGame2.Designer.vb">
+      <DependentUpon>QuimicaGame2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuimicaGame2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuimicaGame1.Designer.vb">
+      <DependentUpon>QuimicaGame1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuimicaGame1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FisicaGame1.Designer.vb">
+      <DependentUpon>FisicaGame1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FisicaGame1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiologiaGame3.Designer.vb">
+      <DependentUpon>BiologiaGame3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BiologiaGame3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiologiaGame2.Designer.vb">
+      <DependentUpon>BiologiaGame2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BiologiaGame2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiologiaGame1.Designer.vb">
+      <DependentUpon>BiologiaGame1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BiologiaGame1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\BGame1.Designer.vb">
+      <DependentUpon>BGame1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\BGame1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\BGame3.Designer.vb">
+      <DependentUpon>BGame3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\BGame3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\FGame1.Designer.vb">
+      <DependentUpon>FGame1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\FGame1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\FGame2.Designer.vb">
+      <DependentUpon>FGame2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\FGame2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\FGame3.Designer.vb">
+      <DependentUpon>FGame3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\FGame3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlatUITheme.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GameStartMenu.Designer.vb">
+      <DependentUpon>GameStartMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GameStartMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\BGame2.Designer.vb">
+      <DependentUpon>BGame2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\BGame2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QGame1.Designer.vb">
+      <DependentUpon>QGame1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QGame1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QGame2.Designer.vb">
+      <DependentUpon>QGame2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QGame2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QGame3.Designer.vb">
+      <DependentUpon>QGame3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QGame3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question.vb" />
+    <Compile Include="Start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.vb">
+      <DependentUpon>Start.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utilities.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FisicaGame2.resx">
+      <DependentUpon>FisicaGame2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FisicaGame3.resx">
+      <DependentUpon>FisicaGame3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuimicaGame3.resx">
+      <DependentUpon>QuimicaGame3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuimicaGame2.resx">
+      <DependentUpon>QuimicaGame2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuimicaGame1.resx">
+      <DependentUpon>QuimicaGame1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FisicaGame1.resx">
+      <DependentUpon>FisicaGame1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiologiaGame3.resx">
+      <DependentUpon>BiologiaGame3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiologiaGame2.resx">
+      <DependentUpon>BiologiaGame2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiologiaGame1.resx">
+      <DependentUpon>BiologiaGame1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\BGame1.resx">
+      <DependentUpon>BGame1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\BGame2.resx">
+      <DependentUpon>BGame2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\BGame3.resx">
+      <DependentUpon>BGame3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\FGame1.resx">
+      <DependentUpon>FGame1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\FGame2.resx">
+      <DependentUpon>FGame2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\FGame3.resx">
+      <DependentUpon>FGame3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameStartMenu.resx">
+      <DependentUpon>GameStartMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QGame1.resx">
+      <DependentUpon>QGame1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QGame2.resx">
+      <DependentUpon>QGame2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QGame3.resx">
+      <DependentUpon>QGame3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Biologia\1\apendice.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Biologia\1\colon.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Biologia\1\corazon.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Biologia\1\estomago.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Biologia\1\higado.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Biologia\1\intestino delgado.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Biologia\1\intestino grueso.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Biologia\1\pancreas.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Biologia\1\pulmones.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Biologia\1\vejiga.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\meiosisanafase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\meiosismetafase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\meiosisprofase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\meiosistelofase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\mitosisinterfase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\mitosismetafase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\mitosisprofase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\mitosistelofase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\sistemaurinario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\sistemacirculatorio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\sistemadigestivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\sistemamuscular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\sistemanervioso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\sistemarespiratorio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\sistemaesqueleto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="resources\radiacion.jpg" />
+    <None Include="resources\conduccion.png" />
+    <None Include="resources\transistor.png" />
+    <None Include="resources\lenz.png" />
+    <None Include="resources\equilibriotermico.png" />
+    <None Include="resources\conveccion.jpg" />
+    <None Include="resources\aislador.jpg" />
+    <None Include="resources\escalasdetemperatura.png" />
+    <None Include="resources\solido.png" />
+    <None Include="resources\serie.png" />
+    <None Include="resources\paralelo.png" />
+    <None Include="resources\mixtos.png" />
+    <None Include="resources\liquido.png" />
+    <None Include="resources\jauladefaraday.jpg" />
+    <None Include="resources\hidrostatica.png" />
+    <None Include="resources\hidrodinamica.jpg" />
+    <None Include="resources\hidraulica.jpg" />
+    <None Include="resources\gas.png" />
+    <None Include="resources\escalas de temperatura.png" />
+    <None Include="resources\electroscopio.jpg" />
+    <None Include="resources\electrodinamica.png" />
+    <None Include="resources\campomagnetico.jpg" />
+    <None Include="resources\campoelectrico.jpg" />
+    <None Include="resources\metaloides.jpeg" />
+    <None Include="resources\metales de transicion.jpeg" />
+    <None Include="resources\lantanidos.jpeg" />
+    <None Include="resources\halogenos.jpeg" />
+    <None Include="resources\grupo 10.jpeg" />
+    <None Include="resources\grupo 1.jpeg" />
+    <None Include="resources\gases nobles.jpeg" />
+    <None Include="resources\alcantinoterreos.jpeg" />
+    <None Include="resources\alcalinos.jpeg" />
+    <None Include="resources\Actinidos.jpeg" />
+    <None Include="resources\yodo.jpeg" />
+    <None Include="resources\radon.jpeg" />
+    <None Include="resources\osmio.jpeg" />
+    <None Include="resources\oro.jpeg" />
+    <None Include="resources\litio.jpeg" />
+    <None Include="resources\kripton.jpeg" />
+    <None Include="resources\hidrogeno.jpeg" />
+    <None Include="resources\cobre.jpeg" />
+    <None Include="resources\cloro.jpeg" />
+    <None Include="resources\carbono.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
